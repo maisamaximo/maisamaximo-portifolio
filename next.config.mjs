@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "/maisamaximo-portifolio/" : "",
+  images: {
+    unoptimized: true,
+  },
+};
 
-export default nextConfig;
+module.exports = nextConfig;

@@ -2,11 +2,14 @@
   "name": "portifolio-maisamaximo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maisamaximo.github.io/maisamaximo-portifolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "gh-pages": "^6.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
